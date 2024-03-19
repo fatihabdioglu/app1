@@ -16,5 +16,9 @@ spec:
       containers:
       - name: web
         image: nginx:latest
+        command:
+        - "bin/bash"
+        - "-c"
+        - "echo 'Sampiyon GALATASARAY' > /usr/share/nginx/html/index.html && nginx -g 'daemon off;'"
         ports:
         - containerPort: 80
