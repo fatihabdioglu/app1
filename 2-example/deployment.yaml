@@ -16,3 +16,5 @@ spec:
       - name: myapp
         image: dhruvin30/dhsoniweb
         imagePullPolicy: IfNotPresent
+        ports:
+        - containerPort: 80
